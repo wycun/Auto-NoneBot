@@ -8,7 +8,6 @@ PACKAGE_NAME="Lagrange.OneBot_linux-x64_net8.0_SelfContained.tar.gz"
 
 # 定义安装目录
 INSTALL_DIR="/opt/Lagrange.OneBot"
-
 # 创建安装目录
 echo "创建安装目录..."
 mkdir -p $INSTALL_DIR
@@ -31,20 +30,11 @@ tar -xzf $PACKAGE_NAME -C $INSTALL_DIR
 echo "清理下载的安装包..."
 rm -f $PACKAGE_NAME
 
-# 移动文件
-echo "移动文件..."
-mv $INSTALL_DIR/Lagrange.OneBot/bin/Release/net8.0/linux-musl-arm64/publish/* $INSTALL_DIR/
-
-# 删除源目录
-echo "删除源目录..."
-rm -rf $INSTALL_DIR/Lagrange.OneBot/bin
-
 echo "Lagrange.OneBot下载、解压、文件移动和清理完成！"
 
 # 设置运行权限
 echo "设置运行权限..."
-chmod +x $INSTALL_DIR/Lagrange.OneBot
-
+chmod +x $INSTALL_DIR/Lagrange.OneBot/bin/Release/net8.0/linux-x64/publish/Lagrange.OneBot
 # 运行Lagrange.OneBot
 echo "运行Lagrange.OneBot..."
-$INSTALL_DIR/Lagrange.OneBot
+$INSTALL_DIR/Lagrange.OneBot/bin/Release/net8.0/linux-x64/publish/Lagrange.OneBot

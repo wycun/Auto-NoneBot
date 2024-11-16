@@ -25,21 +25,14 @@ tar -xzf $PACKAGE_NAME -C $INSTALL_DIR
 echo "清理下载的安装包..."
 rm -f $PACKAGE_NAME
 
-# 移动文件
-echo "移动文件..."
-mv $INSTALL_DIR/Lagrange.OneBot/bin/Release/net8.0/linux-musl-arm64/publish/* $INSTALL_DIR/Lagrange.OneBot/
-
-# 删除源目录
-echo "删除源目录..."
-rm -rf $INSTALL_DIR/Lagrange.OneBot/bin
 
 echo "Lagrange.OneBot下载、解压、文件移动和清理完成！"
 
 # 进行初始运行
 # 设置运行权限
 echo "设置运行权限..."
-chmod +x $INSTALL_DIR/Lagrange.OneBot
+chmod +x $INSTALL_DIR/Lagrange.OneBot/bin/Release/net8.0/linux-x64/publish/Lagrange.OneBot
 
 # 运行Lagrange.OneBot
 echo "进行初始化运行Lagrange.OneBot..."
-$INSTALL_DIR/Lagrange.OneBot
+$INSTALL_DIR/Lagrange.OneBot/bin/Release/net8.0/linux-x64/publish/Lagrange.OneBot

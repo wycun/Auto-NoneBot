@@ -36,7 +36,7 @@ del %PACKAGE_NAME%
 
 :: 运行Lagrange.OneBot
 echo 运行Lagrange.OneBot...
-start "" "%INSTALL_DIR%\Lagrange.OneBot.exe"
+start "" "%INSTALL_DIR%\Lagrange.OneBot/bin/Release/net8.0/win-x64/publish/Lagrange.OneBot.exe"
 
 echo Lagrange.OneBot安装和运行完成！
 endlocal

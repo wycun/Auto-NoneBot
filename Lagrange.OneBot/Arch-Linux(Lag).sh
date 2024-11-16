@@ -33,10 +33,10 @@ rm -f $PACKAGE_NAME
 
 # 设置运行权限
 echo "设置运行权限..."
-sudo chmod +x $INSTALL_DIR/Lagrange.OneBot
+sudo chmod +x $INSTALL_DIR/Lagrange.OneBot/bin/Release/net8.0/linux-x64/publish/Lagrange.OneBot
 
 # 运行Lagrange.OneBot
 echo "运行Lagrange.OneBot..."
-sudo $INSTALL_DIR/Lagrange.OneBot
+sudo $INSTALL_DIR/Lagrange.OneBot/bin/Release/net8.0/linux-x64/publish/Lagrange.OneBot
 
 echo "Lagrange.OneBot安装和运行完成！"
