@@ -40,3 +40,14 @@ INSTALL_DIR="/opt/Lagrange.OneBot" && chmod +x $INSTALL_DIR/Lagrange.OneBot/bin/
 ```
 
 
+# 运行 Lagrange.OneBot程序 (Windows 系统)
+
+###  Windows | PowerShell
+
+```python
+
+set INSTALL_DIR=C:\Lagrange.OneBot && echo 运行Lagrange.OneBot... && start "" "%INSTALL_DIR%\Lagrange.OneBot/bin/Release/net8.0/win-x64/publish/Lagrange.OneBot.exe" && echo Lagrange.OneBot 运行完成！
+
+```
+
+
