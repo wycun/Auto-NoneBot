@@ -1,6 +1,13 @@
 # Auto-NoneBot
 自动部署 Nonebot / QQ协议 / Python(3.12.0)
 
+# 程序下载 (Linux/Windows 系统)
+```python
+
+git clone https://github.com/wycun/Auto-NoneBot.git && cd Auto-NoneBot
+
+```
+
 # 运行程序 (Linux 系统)
 ```python
 
