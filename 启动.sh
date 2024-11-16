@@ -41,7 +41,6 @@ while true; do
             echo "4. macOS"
             echo "5. Raspberry Pi"
             echo "6. Ubuntu"
-            echo "7. Termux"
             echo "n. 返回上一级菜单"
 
             read -p "请输入数字 (1-n): " lag_choice
@@ -65,13 +64,6 @@ while true; do
                 6)
                     execute_script "./Lagrange.OneBot/Ubuntu(Lag).sh" "Lagrange.OneBot for Ubuntu"
                     ;;
-                7)
-                echo "你好，我是温玉，这个安装脚本的作者"
-                echo "手机目前还没有安装方式"
-                echo "你可以使用内网穿透"
-                echo "使用 挂机宝 安装 Lagrange.OneBot"
-                echo "来进行监控 你的内网穿透"
-                    ;;
                 n)
                     echo "返回上一级菜单..."
                     ;;
@@ -88,7 +80,6 @@ while true; do
             echo "4. macOS"
             echo "5. Raspberry Pi"
             echo "6. Ubuntu"
-            echo "7. Termux"
             echo "n. 返回上一级菜单"
 
             read -p "请输入数字 (1-n): " python_choice
@@ -111,16 +102,6 @@ while true; do
                     ;;
                 6)
                     execute_script "./Python/Ubuntu(Python).sh" "Python for Ubuntu"
-                    ;;
-                7)
-                    echo "更新软件包索引..."
-pkg update
-echo "安装Python..."
-pkg install python
-echo "验证Python安装..."
-python --version
-echo "Python安装完成。"
-# execute_script "./Python/Termux(Python).sh" "Python for Termux"
                     ;;
                 n)
                     echo "返回上一级菜单..."
