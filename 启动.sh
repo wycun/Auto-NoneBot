@@ -117,7 +117,26 @@ echo "开始安装 pipx"
 python -m ensurepip --default-pip
 python -m pip install --user pipx
 python -m pipx ensurepath
-python3 -m ensurepip --default-pip
+
+sudo apt-get update
+sudo apt-get install python-pip    # for Python 2
+sudo apt-get install python3-pip   # for Python 3
+
+sudo dnf install python-pip   # for Python 2
+sudo dnf install python3-pip  # for Python 3
+
+sudo yum install epel-release
+sudo yum install python-pip   # for Python 2
+sudo yum install python3-pip  # for Python 3
+
+sudo pacman -S python2-pip   # for Python 2
+sudo pacman -S python-pip   # for Python 3
+
+sudo zypper install python-pip   # for Python 2
+sudo zypper install python3-pip  # for Python 3
+
+
+
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
 # 安装 NoneBot-CIL
