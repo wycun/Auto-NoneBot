@@ -17,11 +17,11 @@ libreadline-dev libsqlite3-dev libffi-dev liblzma-dev
 
 # 下载Python源码
 echo "下载$PYTHON_VERSION..."
-wget https://www.python.org/ftp/python/3.13.0/$PYTHON_VERSION.tar
+wget https://www.python.org/ftp/python/3.13.0/$PYTHON_VERSION.tgz
 
 # 解压源码
 echo "解压$PYTHON_VERSION..."
-tar -xf $PYTHON_VERSION.tar
+tar -xf $PYTHON_VERSION.tgz
 cd $PYTHON_VERSION
 
 # 配置Python
@@ -43,6 +43,6 @@ python3.13 --version
 # 清理
 echo "清理..."
 cd ..
-sudo rm -rf $PYTHON_VERSION.tar $PYTHON_VERSION
+sudo rm -rf $PYTHON_VERSION.tgz $PYTHON_VERSION
 
 echo "$PYTHON_VERSION 安装完成。"
