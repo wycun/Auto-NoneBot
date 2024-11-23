@@ -19,7 +19,7 @@ libreadline-dev libsqlite3-dev libffi-dev liblzma-dev
 echo "下载$PYTHON_VERSION..."
 wget https://www.python.org/ftp/python/3.13.0/$PYTHON_VERSION.tgz
 
-# 解压源码
+# 解压源码=
 echo "解压$PYTHON_VERSION..."
 tar -xf $PYTHON_VERSION.tgz
 cd $PYTHON_VERSION
@@ -46,3 +46,8 @@ cd ..
 sudo rm -rf $PYTHON_VERSION.tgz $PYTHON_VERSION
 
 echo "$PYTHON_VERSION 安装完成。"
+
+echo "设置为默认Py环境"
+sudo ln -sf /usr/local/bin/python3.13 /usr/bin/python3
+
+python3 --version

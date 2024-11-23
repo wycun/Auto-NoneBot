@@ -46,3 +46,9 @@ cd ..
 sudo rm -rf $PYTHON_VERSION.tgz $PYTHON_VERSION
 
 echo "$PYTHON_VERSION 安装完成。"
+
+
+echo "设置为默认Py环境"
+sudo ln -sf /usr/local/bin/python3.13 /usr/bin/python3
+
+python3.13 --version
