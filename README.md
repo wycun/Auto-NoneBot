@@ -1,5 +1,5 @@
 # Auto-NoneBot
-自动部署 Nonebot / QQ协议 / Python(3.12.0)
+自动部署 Nonebot / QQ协议 / Python(3.13.0)
 
 # 程序下载 (Linux/Windows 系统)
 ```sh
