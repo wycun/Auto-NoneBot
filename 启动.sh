@@ -137,8 +137,25 @@ sudo zypper install python3-pip  # for Python 3
 
 
 
+sudo apt update
+sudo apt install pipx
+pipx ensurepath
+
+sudo dnf install pipx
+pipx ensurepath
+
+sudo pacman -S python-pipx
+pipx ensurepath
+
+brew install pipx
+pipx ensurepath
+
+scoop install pipx
+pipx ensurepath
+
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
+
 # 安装 NoneBot-CIL
 echo "开始安装 NB-CIL"
 pipx install nb-cli
